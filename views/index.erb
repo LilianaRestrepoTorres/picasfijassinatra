@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="well col-md-6 col-md-offset-3">
+    <div class="row">
+      <h1 class= "text-center">Juego Picas y Fijas!</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <form method="post" action="/">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Guess the number</label>
+            <input type="text" class="form-control" id="user_number" name="user_number" placeholder="Guess the number here">
+
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" <%= @show %> >
+  <div class="well col-md-6 col-md-offset-3">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="alert alert-info" role="alert">
+            <h4>Picas <span class="label label-default"><%= @picas%></span></h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="alert alert-info" role="alert">
+            <h4>Fijas <span class="label label-default"><%= @fijas%></span></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
